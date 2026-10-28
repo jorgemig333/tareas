@@ -7,8 +7,8 @@ def main():
 
     # 1. Crear la ventana principal
     ventana = tk.Tk()
-    ventana.title("Mi perfil personal")
-    ventana.geometry("500x700")
+    ventana.title("Mi perfil")
+    ventana.geometry("1000x1000")
     ventana.configure(bg="#A7A19A")
     ventana.resizable(False, False)
 
@@ -37,7 +37,7 @@ def main():
     # 4. Mostrar el nombre completo
     nombre = tk.Label(
         ventana,
-        text="TU NOMBRE COMPLETO",
+        text="JORGE MIGUEL MAMANI CANAVIRI",
         font=("Arial", 16, "bold"),
         bg="#EAF2F8",
         fg="#2874A6"
@@ -47,7 +47,7 @@ def main():
     # 5. Agregar una descripcion personal
     descripcion = tk.Label(
         ventana,
-        text="Hola, esta es mi presentacion personal.",
+        text="Hola, me presento:",
         font=("Arial", 11),
         bg="#EAF2F8",
         fg="#34495E"
@@ -67,10 +67,7 @@ def main():
     # 7. Mostrar las cosas que me gusta hacer
     gustos = tk.Label(
         ventana,
-        text="• Escuchar musica\n"
-             "• Aprender programacion\n"
-             "• Compartir con mi familia\n"
-             "• Practicar mis habilidades",
+        text="Me gusta manejar mi moto, escuchando musica, por momentos jugar en la pc y seguir estudiando",
         font=("Arial", 12),
         bg="#EAF2F8",
         fg="#34495E",
@@ -81,14 +78,14 @@ def main():
     # 8. Agregar un mensaje final
     boton = tk.Button(
         ventana,
-        text="¡Gracias por visitar mi perfil!",
+        text="¡Gracias por ver mi perfil!",
         font=("Arial", 11, "bold"),
         bg="#154360",
         fg="white",
         activebackground="#2874A6",
         activeforeground="white",
         cursor="hand2",
-        command=lambda: print("¡Gracias por visitar mi perfil!")
+        command=lambda: print("¡Gracias por ver mi perfil!")
     )
 
     boton.pack(pady=20)
